@@ -1,59 +1,10 @@
 <?php
 //this line makes PHP behave in a more strict way
+
 declare(strict_types=1);
-
 //we are going to use session variables so we need to enable sessions
+
 session_start();
-
-/*function whatIsHappening() {
-    echo '<h2>$_GET</h2>';
-    var_dump($_GET);
-    echo '<h2>$_POST</h2>';
-    var_dump($_POST);
-    echo '<h2>$_COOKIE</h2>';
-    var_dump($_COOKIE);
-    echo '<h2>$_SESSION</h2>';
-    var_dump($_SESSION);
-}
-$streetErr = $emailErr = $streetnumberErr = $cityErr= $zipcodeErr = "";
-
-if (!empty($_POST)) {
-    validateInput();
-}
-function validateInput()
-{
-    if (!empty($_POST['email'])) {
-        // TODO: fidn a way to check the email format
-        $email = "test@example.com";
-        $templatemail= '/^[a-zA-Z0-9.\-_]+@[a-zA-Z0-9\-.]+\.[a-zA-Z]{2,4}$/';
-         $emailIsAGoodformat = preg_match($templatemail,$email);
-        if ($emailIsAGoodformat) {
-            echo 'email format ok';
-        } else {
-            echo 'you hacker';
-        }
-        echo 'valid'; 
-    } else {
-        // TODO: show error
-        $emailErr = "Invalid email format";
-        echo 'invalid';
-    }
-        if (!empty($_POST['street'])) {
-            $street = "/^[a-zA-Z-' ]*$/";
-          if ($street){
-            echo 'street format ok';
-        } else {
-            echo 'you hacker';
-        }
-        echo 'valid'; 
-    } else {
-        // TODO: show error
-        $street = false;
-        echo 'invalid';
-    
-            
-          }
-*/
 // define variables and set to empty values
 $emailErr = $streetErr = $streetnumberErr = $cityErr = $zipcodeErr = $productsErr = "";
 $email = $street = $streetnumber = $city = $zipcode = $products = "";
